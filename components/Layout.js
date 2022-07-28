@@ -56,13 +56,13 @@ export default function Layout({ title, children }) {
                 'Loading'
               ) : session?.user ? (
                 <Menu as="div" className="relative inline-block">
-                  <Menu.Button className="text-blue-600">
+                  <Menu.Button className="text-xl font-bold text-amber-200 hover:text-amber-500">
                     {session.user.name}
                   </Menu.Button>
                   <Menu.Items className="absolute right-0 w-56 origin-top-right bg-white font-bold  font-sans shadow-lg ">
                     <Menu.Item>
                       <DropdownLink className="dropdown-link" href="/profile">
-                        Profile
+                        Profile 
                       </DropdownLink>
                     </Menu.Item>
                     <Menu.Item>
